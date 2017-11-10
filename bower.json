@@ -1,0 +1,20 @@
+{
+  "name": "firstobj",
+  "description": "学习项目四",
+  "main": "index.js",
+  "authors": [
+    "EileenZHAO <1053496681@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!--<base href="/">-->
+	<title>跨域测试::::,</title>
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/dist/my-website-cn.css">
+</head>
+<body>
+
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/validator/validator.min.js"></script>
+<script src="javascripts/dist/my-website-cn.min.js"></script>
+<script>
+	$(document).ready(function () {
+		var para = "";
+		$.ajax({
+			url: "http://127.0.0.1:3010/get-test-data",
+			type: "GET",
+			async: true,
+			data: para,
+			success: function (res) {
+				alert("to here");
+				console.log(res);
+			}
+		});
+	});
+</script>
+</body>
+</html>
